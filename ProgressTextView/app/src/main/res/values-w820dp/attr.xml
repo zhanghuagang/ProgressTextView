@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="ProgressTextView">
+            <attr name="text" format="string"/>
+            <attr name="fontSize" format="dimension"/>
+            <attr name="fontOriginColor" format="color|reference"/>
+            <attr name="fontChangeColor" format="reference|color"/>
+            <attr name="range" format="float" />
+            <attr name="direction">
+                <enum name="left" value="0"/>
+                <enum name="right" value="1"/>
+                <enum name="top" value="2"/>
+                <enum name="bottom" value="3"/>
+
+            </attr>
+     </declare-styleable>
+
+    
+</resources>

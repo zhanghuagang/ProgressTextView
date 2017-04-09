@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhg.views.progresstextview.ProgressTextView
+        android:id="@+id/id_changeTextColorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#44ff00"
+        android:padding="10dp"
+        test:direction="left"
+        test:range="0"
+        test:text="ABCDEFG"
+        test:fontChangeColor="#ffff0000"
+        test:fontOriginColor="#ff000000"
+        test:fontSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startLeftChange"
+            android:text="StartLeft" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/id_left"
+            android:onClick="startRightChange"
+            android:text="StartRight" />
+    </LinearLayout>
+
+</RelativeLayout>
